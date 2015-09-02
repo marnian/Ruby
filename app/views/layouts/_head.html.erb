@@ -1,0 +1,16 @@
+<meta charset="UTF-8">
+	<title><%=@titulo||="Curso de Ruby on Rails"%></title>
+	<meta name="viewport" content ="width=device-width, initital scale=1,maximum-scale=1">
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<sript type:="text/javascript" src="https:ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.js" ></sript>
+	<%= stylesheet_link_tag "application", :media => "all" %>
+	<%= javascript_include_tag "application" %>
+	<%= csrf_meta_tags %>
+	<script language="javascript" >
+		$(document).ready(
+			function(){
+				$("#pickname").PikaChoose();
+			});
+	</script>

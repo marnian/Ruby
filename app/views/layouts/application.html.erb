@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<%= render "layouts/head" %>
+</head>
+<body>
+
+	<!--Cabecera-->
+
+	<!--Cabecera Intro-->
+
+	<%= render  "layouts/menu" %>
+		<!-- Empieza contenido dinámico -->
+
+		
+	<!-- Empieza Jumbotron -->
+	<%= render  "layouts/cabecera" %>
+	<!-- Termina Jumbotron -->
+	
+	<!-- Empieza contenido dinámico -->
+	<%= render "layouts/dinamico" %>
+	<!-- Termina contenido dinámico -->
+
+	<%= render "layouts/estatico" %>
+	
+	<!-- Empieza contenido estático -->
+	
+
+
+		
+		<!--Final contenedor -->
+
+		<%if flash[:noticia]%>
+	<div class="row">
+		<div class="span10 offset2 alert">
+			<button type="button" data-dismiss="alert" class="close">&times</button>
+			<%flash[:noticia]%>
+		</div>
+	</div>
+	<%end%>
+</body>
+
+</html>
